@@ -1,0 +1,90 @@
+html {
+   height: 100%;
+}
+
+body {
+   background-color: #e5e5e5;
+   height: 100%;
+}
+
+.wrapper {
+   width: 600px;
+   min-height: 600px;
+   background-color: #c4c4c4;
+   margin: 50px auto 0 auto;
+}
+
+.app {
+   padding-top: 50px;
+}
+.search {
+   margin: 0 100px;
+}
+.search__input {
+   height: 50px;
+   width: 400px;
+   font-size: 20px;
+   line-height: 24px;
+   padding: 10px;
+}
+.search__autocomplete-box {
+   background-color: #f2f1f1;
+}
+
+.search__autocomplete-item,
+.search__empty {
+   min-height: 40px;
+   width: 400px;
+   font-size: 18px;
+   line-height: 20px;
+   padding: 10px;
+   border: 1px solid black;
+}
+
+.search__empty {
+   color: red;
+}
+
+.search__autocomplete-item:hover {
+   background-color: #93d0e6;
+}
+
+.users-list {
+   margin-top: 30px;
+}
+
+.users-list__user {
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid black;
+   background-color: #ea6fdb;
+}
+
+.users-list__user button {
+   align-self: center;
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+   position: relative;
+   background-color: transparent;
+}
+
+.users-list__user button::after,
+.users-list__user button::before {
+   content: "";
+   position: absolute;
+   top: 15px;
+   display: block;
+   width: 30px;
+   height: 2px;
+   background: red;
+}
+
+.users-list__user button::before {
+   transform: rotate(45deg);
+}
+
+.users-list__user button::after {
+   transform: rotate(-45deg);
+}
